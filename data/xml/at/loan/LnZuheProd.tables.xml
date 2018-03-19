@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="LnZuheProd" package="cn.sunline.ltts.busi.at.tables.loan" longname="贷款组合产品表" classgen="normal" xsi:noNamespaceSchemaLocation="ltts-model.xsd">
+    <table id="klnp_edyygz" name="klnp_edyygz" longname="额度应用规则表" category="2" virtual="false" extension="SysCommFieldTable.kapp_yewudj" abstract="false">
+        <fields>
+            <field id="zhfwgzdm" longname="组合服务规则代码" type="BaseType.U_LEIXIN32" ref="AtDict.Dict.zhfwgzdm" primarykey="false" final="false" default="''" nullable="true" identity="false" allowSubType="true"/>
+            <field id="zhfwgzms" longname="组合服务规则描述" type="BaseType.U_ZHAIYOMS" ref="AtDict.Dict.zhfwgzms" primarykey="false" final="false" default="''" nullable="true" identity="false" allowSubType="true"/>
+            <field id="fwyxdaim" longname="服务原型代码" type="BaseType.U_LEIXIN32" ref="AtDict.Dict.fwyxdaim" primarykey="false" final="false" default="''" nullable="true" identity="false" allowSubType="true"/>
+            <field id="fuwuyxms" longname="服务原型描述" type="BaseType.U_ZHAIYOMS" ref="AtDict.Dict.fuwuyxms" primarykey="false" final="false" default="''" nullable="true" identity="false" allowSubType="true"/>
+            <field id="fwyxssmk" longname="服务原型模块" type="BaseEnumType.E_ZUHECPMK" ref="AtDict.Dict.fwyxssmk" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="fuwuyxsx" longname="服务原型属性" type="BaseEnumType.E_FUWUYXSX" ref="AtDict.Dict.fuwuyxsx" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="shengxrq" longname="生效日期" type="BaseType.U_BZRIQILX" ref="AtDict.Dict.shengxrq" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="shxiaorq" longname="失效日期" type="BaseType.U_BZRIQILX" ref="AtDict.Dict.shxiaorq" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="edzuidxe" longname="额度最低限额" type="BaseType.U_ZHANGHYE" ref="AtDict.Dict.edzuidxe" primarykey="false" final="false" default="0.0" nullable="true" identity="false" allowSubType="true"/>
+            <field id="edzuigxe" longname="额度最高限额" type="BaseType.U_ZHANGHYE" ref="AtDict.Dict.edzuigxe" primarykey="false" final="false" default="0.0" nullable="true" identity="false" allowSubType="true"/>
+            <field id="edhbdaih" longname="额度币种" type="BaseEnumType.E_HUOBDAIH" ref="AtDict.Dict.edhbdaih" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="edujinee" longname="额度金额" type="BaseType.U_ZHANGHYE" ref="AtDict.Dict.edujinee" primarykey="false" final="false" default="0.0" nullable="true" identity="false" allowSubType="true"/>
+            <field id="mrsyzdje" longname="每日使用最低金额" type="BaseType.U_ZHANGHYE" ref="AtDict.Dict.mrsyzdje" primarykey="false" final="false" default="0.0" nullable="true" identity="false" allowSubType="true"/>
+            <field id="mrsyzgje" longname="每日使用最高金额" type="BaseType.U_ZHANGHYE" ref="AtDict.Dict.mrsyzgje" primarykey="false" final="false" default="0.0" nullable="true" identity="false" allowSubType="true"/>
+            <field id="benjghjs" longname="本金归还基数" type="BaseType.U_ZHANGHYE" ref="AtDict.Dict.benjghjs" primarykey="false" final="false" default="0.0" nullable="true" identity="false" allowSubType="true"/>
+            <field id="benjghzq" longname="本金归还周期" type="BaseType.U_ZHOUQILX" ref="AtDict.Dict.benjghzq" primarykey="false" final="false" default="''" nullable="true" identity="false" allowSubType="true"/>
+            <field id="shiyqdje" longname="使用起点金额" type="BaseType.U_ZHANGHYE" ref="AtDict.Dict.shiyqdje" primarykey="false" final="false" default="0.0" nullable="true" identity="false" allowSubType="true"/>
+            <field id="shiyjejs" longname="使用金额基数" type="BaseType.U_ZHANGHYE" ref="AtDict.Dict.shiyjejs" primarykey="false" final="false" default="0.0" nullable="true" identity="false" allowSubType="true"/>
+            <field id="edushysx" longname="使用顺序" type="BaseEnumType.E_EDUSHYSX" ref="AtDict.Dict.edushysx" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="dbjykzbz" longname="单笔交易控制种类" type="BaseEnumType.E_DBJYKZBZ" ref="AtDict.Dict.dbjykzbz" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="kzjinebl" longname="控制金额比例" type="BaseType.U_HUILLEIX" ref="AtDict.Dict.kzjinebl" primarykey="false" final="false" default="0.0" nullable="true" identity="false" allowSubType="true"/>
+            <field id="mianxits" longname="默认免息天数" type="BaseType.U_CHANZXLX" ref="AtDict.Dict.mianxits" primarykey="false" final="false" default="0" nullable="true" identity="false" allowSubType="true"/>
+            <field id="zuiddzyl" longname="最低抵质押率" type="BaseType.U_ZHANGHYE" ref="AtDict.Dict.zuiddzyl" primarykey="false" final="false" default="0.0" nullable="true" identity="false" allowSubType="true"/>
+            <field id="zuigdzyl" longname="最高抵质押率" type="BaseType.U_ZHANGHYE" ref="AtDict.Dict.zuigdzyl" primarykey="false" final="false" default="0.0" nullable="true" identity="false" allowSubType="true"/>
+            <field id="dizhiyal" longname="抵质押率" type="BaseType.U_ZHANGHYE" ref="AtDict.Dict.dizhiyal" primarykey="false" final="false" default="0.0" nullable="true" identity="false" allowSubType="true"/>
+            <field id="zuidlcje" longname="最低留存金额" type="BaseType.U_ZHANGHYE" ref="AtDict.Dict.zuidlcje" primarykey="false" final="false" default="0.0" nullable="true" identity="false" allowSubType="true"/>
+            <field id="zuiglcje" longname="最高留存金额" type="BaseType.U_ZHANGHYE" ref="AtDict.Dict.zuiglcje" primarykey="false" final="false" default="0.0" nullable="true" identity="false" allowSubType="true"/>
+            <field id="liucjine" longname="留存金额" type="BaseType.U_ZHANGHYE" ref="AtDict.Dict.liucjine" primarykey="false" final="false" default="0.0" nullable="true" identity="false" allowSubType="true"/>
+            <field id="zuidzcje" longname="最低转存金额" type="BaseType.U_ZHANGHYE" ref="AtDict.Dict.zuidzcje" primarykey="false" final="false" default="0.0" nullable="true" identity="false" allowSubType="true"/>
+            <field id="zuigzcje" longname="最高转存金额" type="BaseType.U_ZHANGHYE" ref="AtDict.Dict.zuigzcje" primarykey="false" final="false" default="0.0" nullable="true" identity="false" allowSubType="true"/>
+            <field id="zhuancje" longname="转存金额" type="BaseType.U_ZHANGHYE" ref="AtDict.Dict.zhuancje" primarykey="false" final="false" default="0.0" nullable="true" identity="false" allowSubType="true"/>
+        </fields>
+        <odbindexes>
+            <index id="odb1" type="unique" fields="zhfwgzdm" operate="selectOne deleteOne updateOne"/>
+        </odbindexes>
+        <indexes>
+            <index id="klnp_xhdkgz_idx1" type="unique" fields="zhfwgzdm,farendma"/>
+        </indexes>
+    </table>
+    <table id="klnp_cdzhgz" name="klnp_cdzhgz" longname="存贷组合规则表" category="2" virtual="false" extension="SysCommFieldTable.kapp_yewudj" abstract="false">
+        <fields>
+            <field id="zhfwgzdm" longname="组合服务规则代码" type="BaseType.U_LEIXIN32" ref="AtDict.Dict.zhfwgzdm" primarykey="false" final="false" default="''" nullable="true" identity="false" allowSubType="true"/>
+            <field id="zhfwgzms" longname="组合服务规则描述" type="BaseType.U_ZHAIYOMS" ref="AtDict.Dict.zhfwgzms" primarykey="false" final="false" default="''" nullable="true" identity="false" allowSubType="true"/>
+            <field id="fwyxdaim" longname="服务原型代码" type="BaseType.U_LEIXIN32" ref="AtDict.Dict.fwyxdaim" primarykey="false" final="false" default="''" nullable="true" identity="false" allowSubType="true"/>
+            <field id="fuwuyxms" longname="服务原型描述" type="BaseType.U_ZHAIYOMS" ref="AtDict.Dict.fuwuyxms" primarykey="false" final="false" default="''" nullable="true" identity="false" allowSubType="true"/>
+            <field id="fwyxssmk" longname="服务原型模块" type="BaseEnumType.E_ZUHECPMK" ref="AtDict.Dict.fwyxssmk" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="fuwuyxsx" longname="服务原型属性" type="BaseEnumType.E_FUWUYXSX" ref="AtDict.Dict.fuwuyxsx" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="shengxrq" longname="生效日期" type="BaseType.U_BZRIQILX" ref="AtDict.Dict.shengxrq" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="shxiaorq" longname="失效日期" type="BaseType.U_BZRIQILX" ref="AtDict.Dict.shxiaorq" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="yunxycdd" longname="允许以存抵贷" type="BaseEnumType.E_SHIFOUBZ" ref="AtDict.Dict.yunxycdd" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="cdyibzhi" longname="存贷易标志" type="BaseEnumType.E_SHIFOUBZ" ref="AtDict.Dict.cdyibzhi" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="zddkxish" longname="最低抵扣系数" type="BaseType.U_BILVLLLX" ref="AtDict.Dict.zddkxish" primarykey="false" final="false" default="0.0" nullable="true" identity="false" allowSubType="true"/>
+            <field id="zgdkxish" longname="最高抵扣系数" type="BaseType.U_BILVLLLX" ref="AtDict.Dict.zgdkxish" primarykey="false" final="false" default="0.0" nullable="true" identity="false" allowSubType="true"/>
+            <field id="dkouxish" longname="抵扣系数" type="BaseType.U_BILVLLLX" ref="AtDict.Dict.dkouxish" primarykey="false" final="false" default="0.0" nullable="true" identity="false" allowSubType="true"/>
+            <field id="syzffshi" longname="收益支付方式" type="BaseEnumType.E_SYZFFSHI" ref="AtDict.Dict.syzffshi" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="shyijsbz" longname="收益计算标志" type="BaseEnumType.E_SHYIJSBZ" ref="AtDict.Dict.shyijsbz" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="shyizflx" longname="收益支付类型" type="BaseEnumType.E_SHYIZFLX" ref="AtDict.Dict.shyizflx" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="shyizfzq" longname="收益支付周期" type="BaseType.U_ZHOUQILX" ref="AtDict.Dict.shyizfzq" primarykey="false" final="false" default="''" nullable="true" identity="false" allowSubType="true"/>
+            <field id="lilvckgz" longname="利率参考值规则" type="BaseEnumType.E_LILVCKGZ" ref="AtDict.Dict.lilvckgz" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="dkllckzh" longname="贷款利率参考值" type="BaseType.U_LILVLEIX" ref="AtDict.Dict.dkllckzh" primarykey="false" final="false" default="0.0" nullable="true" identity="false" allowSubType="true"/>
+            <field id="ckllckzh" longname="存款利率参考值" type="BaseType.U_LILVLEIX" ref="AtDict.Dict.ckllckzh" primarykey="false" final="false" default="0.0" nullable="true" identity="false" allowSubType="true"/>
+            <field id="dkjqllgz" longname="贷款加权利率取值规则" type="BaseEnumType.E_DKJQLLGZ" ref="AtDict.Dict.dkjqllgz" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="ckjqllgz" longname="存款加权利率取值规则" type="BaseEnumType.E_CKJQLLGZ" ref="AtDict.Dict.ckjqllgz" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="cdllczgz" longname="存贷款利率差值规则" type="BaseEnumType.E_CDLLCZGZ" ref="AtDict.Dict.cdllczgz" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="celjsydx" longname="超额累进折算模式适应对象" type="BaseEnumType.E_CELJSYDX" ref="AtDict.Dict.celjsydx" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="jcedqzgz" longname="当日基础额度取值规则" type="BaseEnumType.E_JCEDQZGZ" ref="AtDict.Dict.jcedqzgz" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+        </fields>
+        <odbindexes>
+            <index id="odb1" type="unique" fields="zhfwgzdm" operate="selectOne deleteOne updateOne"/>
+        </odbindexes>
+        <indexes>
+            <index id="klnp_cdzhgz_idx1" type="unique" fields="zhfwgzdm,farendma"/>
+        </indexes>
+    </table>
+    <table id="klnp_ycddgz" name="klnp_ycddgz" longname="以存抵贷规则表" category="2" virtual="false" extension="SysCommFieldTable.kapp_yewudj" abstract="false">
+        <fields>
+            <field id="zhfwgzdm" longname="组合服务规则代码" type="BaseType.U_LEIXIN32" ref="AtDict.Dict.zhfwgzdm" primarykey="false" final="false" default="''" nullable="true" identity="false" allowSubType="true"/>
+            <field id="fenhdaim" longname="分行代码" type="BaseType.U_FENHDAIM" ref="AtDict.Dict.fenhdaim" primarykey="false" final="false" default="''" nullable="false" identity="false" allowSubType="true"/>
+            <field id="huobdhao" longname="货币代号" type="BaseEnumType.E_HUOBDAIH" ref="AtDict.Dict.huobdhao" primarykey="false" final="false" nullable="false" identity="false" allowSubType="true"/>
+            <field id="fendxhao" longname="分档序号" type="BaseType.U_CHANZXLX" ref="AtDict.Dict.fendxhao" primarykey="false" final="false" default="0" nullable="false" identity="false" allowSubType="true"/>
+            <field id="fendsxje" longname="分档上限金额" type="BaseType.U_ZHANGHYE" ref="AtDict.Dict.fendsxje" primarykey="false" final="false" default="0.00" nullable="true" identity="false" allowSubType="true"/>
+            <field id="fendxxje" longname="分档下限金额" type="BaseType.U_ZHANGHYE" ref="AtDict.Dict.fendxxje" primarykey="false" final="false" default="0.00" nullable="true" identity="false" allowSubType="true"/>
+            <field id="kedijbil" longname="可抵减比例" type="BaseType.U_BILVLLLX" ref="AtDict.Dict.kedijbil" primarykey="false" final="false" default="0.00" nullable="true" identity="false" allowSubType="true"/>
+            <field id="suskoucs" longname="速算扣除数" type="BaseType.U_ZHANGHYE" ref="AtDict.Dict.suskoucs" primarykey="false" final="false" default="0" nullable="true" identity="false" allowSubType="true"/>
+        </fields>
+        <odbindexes>
+            <index id="odb1" type="unique" fields="zhfwgzdm fenhdaim huobdhao fendxhao" operate="selectOne deleteOne updateOne"/>
+            <index id="odb2" type="index" fields="zhfwgzdm" operate="selectFirst selectAll selectPage update delete"/>
+        </odbindexes>
+        <indexes>
+            <index id="klnp_ycddgz_idx1" type="unique" fields="zhfwgzdm,fenhdaim,huobdhao,fendxhao,farendma"/>
+            <index id="klnp_ycddgz_idx2" type="index" fields="zhfwgzdm,farendma"/>
+        </indexes>
+    </table>
+    <table id="klnp_cezsgz" name="klnp_cezsgz" longname="存款超额累进折算模式规则表" category="2" virtual="false" extension="SysCommFieldTable.kapp_yewudj" abstract="false">
+        <fields>
+            <field id="zhfwgzdm" longname="组合服务规则代码" type="BaseType.U_LEIXIN32" ref="AtDict.Dict.zhfwgzdm" primarykey="false" final="false" default="''" nullable="true" identity="false" allowSubType="true"/>
+            <field id="fenhdaim" longname="分行代码" type="BaseType.U_FENHDAIM" ref="AtDict.Dict.fenhdaim" primarykey="false" final="false" default="''" nullable="false" identity="false" allowSubType="true"/>
+            <field id="huobdhao" longname="货币代号" type="BaseEnumType.E_HUOBDAIH" ref="AtDict.Dict.huobdhao" primarykey="false" final="false" nullable="false" identity="false" allowSubType="true"/>
+            <field id="fendxhao" longname="分档序号" type="BaseType.U_CHANZXLX" ref="AtDict.Dict.fendxhao" primarykey="false" final="false" default="0" nullable="false" identity="false" allowSubType="true"/>
+            <field id="zhesxxje" longname="折算下限金额" type="BaseType.U_ZHANGHYE" ref="AtDict.Dict.zhesxxje" primarykey="false" final="false" default="0.00" nullable="true" identity="false" allowSubType="true"/>
+            <field id="zhessxje" longname="折算上限金额" type="BaseType.U_ZHANGHYE" ref="AtDict.Dict.zhessxje" primarykey="false" final="false" default="0.00" nullable="true" identity="false" allowSubType="true"/>
+            <field id="zhesbili" longname="折算比例" type="BaseType.U_BILVLLLX" ref="AtDict.Dict.zhesbili" primarykey="false" final="false" default="0.00" nullable="true" identity="false" allowSubType="true"/>
+            <field id="suskoucs" longname="速算扣除数" type="BaseType.U_ZHANGHYE" ref="AtDict.Dict.suskoucs" primarykey="false" final="false" default="0" nullable="true" identity="false" allowSubType="true"/>
+        </fields>
+        <odbindexes>
+            <index id="odb1" type="unique" fields="zhfwgzdm fenhdaim huobdhao fendxhao" operate="selectOne deleteOne updateOne"/>
+            <index id="odb2" type="index" fields="zhfwgzdm" operate="selectFirst selectAll selectPage update delete"/>
+        </odbindexes>
+        <indexes>
+            <index id="klnp_cezsgz_idx1" type="unique" fields="zhfwgzdm,fenhdaim,huobdhao,fendxhao,farendma"/>
+            <index id="klnp_cezsgz_idx2" type="index" fields="zhfwgzdm,farendma"/>
+        </indexes>
+    </table>
+    <table id="klnb_zuheqy" name="klnb_zuheqy" longname="组合签约表" category="2" virtual="false" extension="SysCommFieldTable.kapp_yewudj" abstract="false">
+        <fields>
+            <field id="jiejuhao" longname="借据号" type="BaseType.U_JIEJUHAO" ref="AtDict.Dict.jiejuhao" primarykey="false" final="false" default="''" nullable="false" identity="false" allowSubType="true"/>
+            <field id="dkzhangh" longname="贷款账号" type="BaseType.U_ZHANGHAO" ref="AtDict.Dict.dkzhangh" primarykey="false" final="false" default="''" nullable="false" identity="false" allowSubType="true"/>
+            <field id="qianyubh" longname="签约编号" type="BaseType.U_LEIXIN80" ref="AtDict.Dict.qianyubh" primarykey="false" final="false" default="''" nullable="false" identity="false" allowSubType="true"/>
+            <field id="qianyulx" longname="签约类型" type="BaseType.U_LEIXIN02" ref="AtDict.Dict.qianyulx" primarykey="false" final="false" default="''" nullable="false" identity="false" allowSubType="true"/>
+            <field id="qianyums" longname="签约描述" type="BaseType.U_LEIXIN80" ref="AtDict.Dict.qianyums" primarykey="false" final="false" default="''" nullable="false" identity="false" allowSubType="true"/>
+        </fields>
+        <odbindexes>
+            <index id="odb1" type="unique" fields="jiejuhao qianyubh" operate="selectOne deleteOne updateOne"/>
+            <index id="odb2" type="unique" fields="dkzhangh qianyubh" operate="selectOne deleteOne updateOne"/>
+            <index id="odb3" type="index" fields="qianyubh" operate="selectFirst selectAll selectPage update delete selectCursor"/>
+        </odbindexes>
+        <indexes>
+            <index id="klnb_zuheqy_idx1" type="unique" fields="jiejuhao,qianyubh,farendma"/>
+            <index id="klnb_zuheqy_idx2" type="unique" fields="dkzhangh,qianyubh,farendma"/>
+            <index id="klnb_zuheqy_idx3" type="index" fields="qianyubh,farendma"/>
+        </indexes>
+    </table>
+    <table id="klnb_dkcdsy" name="klnb_dkcdsy" longname="贷款存贷易收益表" category="2" virtual="false" extension="SysCommFieldTable.kapp_yewudj" abstract="false">
+        <fields>
+            <field id="qianyubh" longname="签约编号" type="BaseType.U_LEIXIN80" ref="AtDict.Dict.qianyubh" primarykey="false" final="false" default="''" nullable="false" identity="false" allowSubType="true"/>
+            <field id="mingxixh" longname="明细序号" type="BaseType.U_CHANZXLX" ref="AtDict.Dict.mingxixh" primarykey="false" final="false" default="0" nullable="false" identity="false" allowSubType="true"/>
+            <field id="shyiyuee" longname="收益余额" type="BaseType.U_ZHANGHYE" ref="AtDict.Dict.shyiyuee" primarykey="false" final="false" default="0.0" nullable="false" identity="false" allowSubType="true"/>
+            <field id="scjssyrq" longname="上次计算收益日期" type="BaseType.U_BZRIQILX" ref="AtDict.Dict.scjssyrq" primarykey="false" final="false" nullable="false" identity="false" allowSubType="true"/>
+            <field id="shyijszt" longname="收益计算状态" type="BaseEnumType.E_SHYIJSZT" ref="AtDict.Dict.shyijszt" primarykey="false" final="false" nullable="false" identity="false" allowSubType="true"/>
+        </fields>
+        <odbindexes>
+            <index id="odb1" type="unique" fields="qianyubh" operate="selectOne deleteOne updateOne"/>
+        </odbindexes>
+        <indexes>
+            <index id="klnb_dkcdsy_idx1" type="unique" fields="qianyubh,farendma"/>
+        </indexes>
+    </table>
+    <table id="klnl_dkcdsy" name="klnl_dkcdsy" longname="存贷易收益明细表" category="2" virtual="false" extension="SysCommFieldTable.kapp_yewudj" abstract="false">
+        <fields>
+            <field id="qianyubh" longname="签约编号" type="BaseType.U_LEIXIN80" ref="AtDict.Dict.qianyubh" primarykey="false" final="false" default="''" nullable="false" identity="false" allowSubType="true"/>
+            <field id="mingxixh" longname="明细序号" type="BaseType.U_CHANZXLX" ref="AtDict.Dict.mingxixh" primarykey="false" final="false" default="0" nullable="true" identity="false" allowSubType="true"/>
+            <field id="zhfwgzdm" longname="组合服务规则代码" type="BaseType.U_LEIXIN32" ref="AtDict.Dict.zhfwgzdm" primarykey="false" final="false" default="''" nullable="true" identity="false" allowSubType="true"/>
+            <field id="cunkjced" longname="存款基础额度" type="BaseType.U_ZHANGHYE" ref="AtDict.Dict.cunkjced" primarykey="false" final="false" default="0.0" nullable="true" identity="false" allowSubType="true"/>
+            <field id="daikjced" longname="贷款基础额度" type="BaseType.U_ZHANGHYE" ref="AtDict.Dict.daikjced" primarykey="false" final="false" default="0.0" nullable="true" identity="false" allowSubType="true"/>
+            <field id="cunkjqll" longname="存款加权利率" type="BaseType.U_LILVLEIX" ref="AtDict.Dict.cunkjqll" primarykey="false" final="false" default="0.0" nullable="true" identity="false" allowSubType="true"/>
+            <field id="daikjqll" longname="贷款加权利率" type="BaseType.U_LILVLEIX" ref="AtDict.Dict.daikjqll" primarykey="false" final="false" default="0.0" nullable="true" identity="false" allowSubType="true"/>
+            <field id="daikckll" longname="贷款参考利率" type="BaseType.U_LILVLEIX" ref="AtDict.Dict.daikckll" primarykey="false" final="false" default="0.0" nullable="true" identity="false" allowSubType="true"/>
+            <field id="shyifase" longname="收益发生额" type="BaseType.U_ZHANGHYE" ref="AtDict.Dict.shyifase" primarykey="false" final="false" default="0.0" nullable="true" identity="false" allowSubType="true"/>
+            <field id="shyiyuee" longname="收益余额" type="BaseType.U_ZHANGHYE" ref="AtDict.Dict.shyiyuee" primarykey="false" final="false" default="0.0" nullable="true" identity="false" allowSubType="true"/>
+            <field id="scjssyrq" longname="上次计算收益日期" type="BaseType.U_BZRIQILX" ref="AtDict.Dict.scjssyrq" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="shyijszt" longname="收益计算状态" type="BaseEnumType.E_SHYIJSZT" ref="AtDict.Dict.shyijszt" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="jiaoyirq" longname="交易日期" type="BaseType.U_BZRIQILX" ref="AtDict.Dict.jiaoyirq" primarykey="false" final="false" nullable="false" identity="false" allowSubType="true"/>
+            <field id="jiaoyils" longname="交易流水" type="BaseType.U_LIUSHHAO" ref="AtDict.Dict.jiaoyils" primarykey="false" final="false" default="''" nullable="false" identity="false" allowSubType="true"/>
+            <field id="jiaoyijg" longname="交易机构" type="BaseType.U_JIGOUHAO" ref="AtDict.Dict.jiaoyijg" primarykey="false" final="false" default="''" nullable="true" identity="false" allowSubType="true"/>
+            <field id="jiaoyigy" longname="交易柜员" type="BaseType.U_GUIYDAIH" ref="AtDict.Dict.jiaoyigy" primarykey="false" final="false" default="''" nullable="true" identity="false" allowSubType="true"/>
+            <field id="jiaoyisj" longname="交易事件" type="BaseType.U_LEIXIN10" ref="AtDict.Dict.jiaoyisj" primarykey="false" final="false" default="''" nullable="true" identity="false" allowSubType="true"/>
+            <field id="shjshuom" longname="事件说明" type="BaseType.U_LEIXIN80" ref="AtDict.Dict.shjshuom" primarykey="false" final="false" default="''" nullable="true" identity="false" allowSubType="true"/>
+            <field id="jiaoyima" longname="交易码" type="BaseType.U_JIAOYIMA" ref="AtDict.Dict.jiaoyima" primarykey="false" final="false" default="''" nullable="true" identity="false" allowSubType="true"/>
+            <field id="zhaiyoms" longname="摘要" type="BaseType.U_ZHAIYOMS" ref="AtDict.Dict.zhaiyoms" primarykey="false" final="false" default="''" nullable="true" identity="false" allowSubType="true"/>
+        </fields>
+        <odbindexes>
+            <index id="odb1" type="unique" fields="mingxixh qianyubh" operate="selectOne deleteOne updateOne"/>
+        </odbindexes>
+        <indexes>
+            <index id="klnl_dkcdsy_idx1" type="unique" fields="mingxixh,qianyubh,farendma"/>
+        </indexes>
+    </table>
+    <table id="klnl_dkcded" name="klnl_dkcded" longname="存贷易额度明细表" category="2" virtual="false" extension="SysCommFieldTable.kapp_yewudj" abstract="false">
+        <fields>
+            <field id="qianyubh" longname="签约编号" type="BaseType.U_LEIXIN80" ref="AtDict.Dict.qianyubh" primarykey="false" final="false" default="''" nullable="false" identity="false" allowSubType="true"/>
+            <field id="mingxixh" longname="明细序号" type="BaseType.U_CHANZXLX" ref="AtDict.Dict.mingxixh" primarykey="false" final="false" default="0" nullable="true" identity="false" allowSubType="true"/>
+            <field id="xuhaoooo" longname="序号" type="BaseType.U_CHANZXLX" ref="AtDict.Dict.xuhaoooo" primarykey="false" final="false" default="0" nullable="true" identity="false" allowSubType="true"/>
+            <field id="jiaoyirq" longname="交易日期" type="BaseType.U_BZRIQILX" ref="AtDict.Dict.jiaoyirq" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="jiaoyils" longname="交易流水" type="BaseType.U_LIUSHHAO" ref="AtDict.Dict.jiaoyils" primarykey="false" final="false" default="''" nullable="true" identity="false" allowSubType="true"/>
+            <field id="kehuzhao" longname="客户账号" type="BaseType.U_KEHUZHAO" ref="AtDict.Dict.kehuzhao" primarykey="false" final="false" default="''" nullable="true" identity="false" allowSubType="true"/>
+            <field id="khzhhzxh" longname="客户账号子序号" type="BaseType.U_ZHHAOXUH" ref="AtDict.Dict.khzhhzxh" primarykey="false" final="false" default="''" nullable="true" identity="false" allowSubType="true"/>
+            <field id="zhahssmk" longname="账号所属模块" type="BaseEnumType.E_ZUHECPMK" ref="AtDict.Dict.zhahssmk" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="zhanghye" longname="帐户余额 " type="BaseType.U_ZHANGHYE" ref="AtDict.Dict.zhanghye" primarykey="false" final="false" default="0.0" nullable="true" identity="false" allowSubType="true"/>
+            <field id="cdyiedje" longname="存贷易额度金额" type="BaseType.U_ZHANGHYE" ref="AtDict.Dict.cdyiedje" primarykey="false" final="false" default="0.0" nullable="true" identity="false" allowSubType="true"/>
+            <field id="huobdhao" longname="货币代号" type="BaseEnumType.E_HUOBDAIH" ref="AtDict.Dict.huobdhao" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="edhbdaih" longname="额度币种" type="BaseEnumType.E_HUOBDAIH" ref="AtDict.Dict.edhbdaih" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="zhxrlilv" longname="执行日利率" type="BaseType.U_LILVLEIX" ref="AtDict.Dict.zhxrlilv" primarykey="false" final="false" default="0.0" nullable="true" identity="false" allowSubType="true"/>
+        </fields>
+        <odbindexes>
+            <index id="odb1" type="unique" fields="xuhaoooo mingxixh qianyubh" operate="selectOne deleteOne updateOne"/>
+        </odbindexes>
+        <indexes>
+            <index id="klnl_dkcded_idx1" type="unique" fields="xuhaoooo,mingxixh,qianyubh,farendma"/>
+        </indexes>
+    </table>
+</schema>

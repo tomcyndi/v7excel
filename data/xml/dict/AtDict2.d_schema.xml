@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<schema id="AtDict2" package="cn.sunline.ltts.busi.sys.dict" longname="资产模块数据字典定义2" classgen="normal" xsi:noNamespaceSchemaLocation="ltts-model.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <description><![CDATA[资产模块数据字典定义2]]></description>
+    <complexType id="Dict" longname="资产模块数据字典" dict="true" abstract="false" introduct="false">
+        <element id="dqsfjqbz" longname="当期是否结清标志" type="BaseEnumType.E_SHIFOUBZ" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="dqyhbjhj" longname="当期应还本金合计" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="dqyhlxhj" longname="当期应还利息合计" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="dqshbjhj" longname="当期实还本金合计" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="dqshlxhj" longname="当期实还利息合计" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="dqyfbjhj" longname="当期应付本金合计" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="yfubjfse" longname="当期应付本金发生额" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="dqyflxhj" longname="当期应付利息合计" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="yfulxfse" longname="当期应付利息发生额" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="yifubjhj" longname="当期已付本金合计" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="yifulxhj" longname="当期已付利息合计" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="yjiezsye" longname="应结转损益金额" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="syjzheji" longname="损益结转金额合计" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="sunyfash" longname="损益发生额" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="yjzhshbj" longname="已结转实还本金" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="yjzhshlx" longname="已结转实还利息" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="huafbzhi" longname="划付标志" type="BaseEnumType.E_HUAFBZHI" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="chaxbzhi" longname="查询标志" type="BaseEnumType.E_CHAXBZHI" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="huafyxji" longname="划付优先级" type="BaseEnumType.E_HUAFYXJI" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="zdichuli" longname="是否自动处理" type="BaseEnumType.E_ZIDOBIOZ" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="bzehkshx" longname="不足额还款顺序" type="BaseEnumType.E_BZEHKSHX" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="peifjine" longname="赔付金额 " type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="bzhjdbje" longname="保证金担保金额" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="bksfyxgz" longname="备款是否允许挂账" type="BaseEnumType.E_SHIFOUBZ" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="zjbzdbje" longname="追加保证金担保金额" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="tanxzjie" longname="摊销总额" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="czdtanje" longname="待摊销金额" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="czytanje" longname="已摊销金额" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="mctxjine" longname="每次摊销金额" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="chuzshru" longname="出租收入金额" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="chuzzhch" longname="出租支出金额" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="yewmingc" longname="业务名称" type="BaseType.U_DNMIAOSH" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="scsfriqi" longname="上次收费日期" type="BaseType.U_BZRIQILX" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="xcsfriqi" longname="下次收费日期" type="BaseType.U_BZRIQILX" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="dzzcfylx" longname="抵债资产费用类型" type="BaseEnumType.E_DZZCFYZL" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="yueshxin" longname="余额属性" type="BaseType.U_LEIXIN32" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="dzczywsr" longname="抵债资产处置营业外收入" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="dzczywzc" longname="抵债资产处置营业外支出" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="ghfryjlx" longname="封包后入池前归还应收应计利息" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="ghfrcsyj" longname="封包后入池前归还催收应计利息" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="ghfrysqx" longname="封包后入池前归还应收欠息" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="ghfrcsqx" longname="封包后入池前归还催收欠息" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="ghfryjfa" longname="封包后入池前归还应收应计罚息" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="ghfrcjfa" longname="封包后入池前归还催收应计罚息" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="ghfrysfx" longname="封包后入池前归还应收罚息" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="ghfrcsfx" longname="封包后入池前归还催收罚息" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="ghfryjfu" longname="封包后入池前归还应计复息" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="ghfrfuxi" longname="封包后入池前归还复息" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="ghfryjtx" longname="封包后入池前归还应计贴息" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="ghfrystx" longname="封包后入池前归还应收贴息" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="shysyjlx" longname="赎回时点应收应计利息" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="shcsyjlx" longname="赎回时点催收应计利息" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="shyshoqx" longname="赎回时点应收欠息" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="shcshoqx" longname="赎回时点催收欠息" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="shysyjfx" longname="赎回时点应收应计罚息" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="shcsyjfx" longname="赎回时点催收应计罚息" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="shyshofx" longname="赎回时点应收罚息" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="shcshofx" longname="赎回时点催收罚息" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="shyjfuxi" longname="赎回时点应计复息" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="shfuxiii" longname="赎回时点复息" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="shyjtixi" longname="赎回时点应计贴息" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="shystixi" longname="赎回时点应收贴息" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="ghshyjlx" longname="归还赎回时点应收应计利息" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="ghshcsyj" longname="归还赎回时点催收应计利息" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="ghshysqx" longname="归还赎回时点应收欠息" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="ghshcsqx" longname="归还赎回时点催收欠息" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="ghshyjfa" longname="归还赎回时点应收应计罚息" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="ghshcjfa" longname="归还赎回时点催收应计罚息" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="ghshysfx" longname="归还赎回时点应收罚息" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="ghshcsfx" longname="归还赎回时点催收罚息" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="ghshyjfu" longname="归还赎回时点应计复息" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="ghshfuxi" longname="归还赎回时点复息" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="ghshyjtx" longname="归还赎回时点应计贴息" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="ghshystx" longname="归还赎回时点应收贴息" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="fblxsfhq" longname="封包时点利息是否还清标志" type="BaseEnumType.E_SHIFOUBZ" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="shlxsfhq" longname="赎回时点利息是否还清标志" type="BaseEnumType.E_SHIFOUBZ" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="dqsfzdhk" longname="到期是否自动划扣" type="BaseEnumType.E_SHIFOUBZ" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="shifyxhu" longname="是否已销户" type="BaseEnumType.E_SHIFOUBZ" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="xieybili" longname="协议比例" type="BaseType.U_BILVLLLX" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="xieyjine" longname="协议金额" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="sfxmyint" longname="是否项目类银团" type="BaseEnumType.E_SHIFOUBZ" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="zdzyzhbz" longname="指定质押账号标志" type="BaseEnumType.E_SHIFOUBZ" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="fysfthbz" longname="费用是否退回标志" type="BaseEnumType.E_SHIFOUBZ" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="pzsfthbz" longname="凭证是否退回标志" type="BaseEnumType.E_SHIFOUBZ" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="jiekjine" longname="解控金额" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="pjuhaoma" longname="票据号码2" type="BaseType.U_YEWUBHAO" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="zdkjjhao" longname="转垫款借据号" type="BaseType.U_CHMIAOSH" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="yqzdzjbz" longname="逾期自动追缴标志" type="BaseEnumType.E_SHIFOUBZ" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="tshudklx" longname="特殊贷款类型" type="BaseType.U_YEWUBHAO" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="zhhuzwmc" longname="账户名称" type="BaseType.U_ZHHUZWMC" required="false" desc="账户名称" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="qixifans" longname="起息方式" type="BaseEnumType.E_QIXIFANS" required="false" desc="起息方式" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="zhfutojn" longname="支付条件 " type="BaseEnumType.E_ZHFUTOJN" required="false" desc="支付条件 " multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="zhhufenl" longname="账户分类" type="BaseType.U_LEIXIN04" required="false" desc="账户分类" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="zhshuxin" longname="账户属性" type="BaseType.U_LEIXIN10" required="false" desc="账户属性" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="llfdonbz" longname="利率浮动标志" type="BaseEnumType.E_LILVFDBZ" required="false" desc="利率浮动标志1" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="zhcunfsh" longname="转存方式 " type="BaseEnumType.E_ZHCUNFSH" required="false" desc="转存方式 " multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="tduifwei" longname="通兑范围" type="BaseEnumType.E_TCTDFWEI" required="false" desc="如果指定机构通兑，则通过产品对象表来实现哪些机构通兑" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="chapbhao" longname="产品编号" type="BaseType.U_CHANPHAO" required="false" desc="产品编号，如1000。在系统中开户时可以直接输入1000，关联出1000产品的相关信息。" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="lilvfdbl" longname="利率浮动比例" type="BaseType.U_JIAOYIJE" required="false" desc="利率浮动比例" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="cunqiiii" longname="存期" type="BaseType.U_CUNQIIII" required="false" desc="存期" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="llfdonfs" longname="利率浮动方式" type="BaseEnumType.E_HLYHFDFS" required="false" desc="利率浮动标志1" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="xunhchbz" longname="循环池标志" type="BaseEnumType.E_SHIFOUBZ" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="ssfenbbz" longname="实时封包标志" type="BaseEnumType.E_SHIFOUBZ" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="ejbzjzxh" longname="二级保证金账号子序号" type="BaseType.U_ZHHAOXUH" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="cundphcl" longname="存单批后处理" type="BaseEnumType.E_CUNDPHCL" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="fybkdqbz" longname="费用首期是否包括当前期" type="BaseEnumType.E_SHIFOUBZ" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="mqjqsfbz" longname="末期已结清是否收费" type="BaseEnumType.E_SHIFOUBZ" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="dzzcczwb" longname="抵债资产是否处置完毕标志" type="BaseEnumType.E_SHIFOUBZ" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="xgscbzhi" longname="修改删除标志" type="BaseEnumType.E_XGSCBZHI" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="sfzhqisf" longname="是否周期收费" type="BaseEnumType.E_SHIFOUBZ" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="hjzlgxzq" longname="黄金租赁价格更新周期" type="BaseType.U_ZHOUQILX" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="sfljsfei" longname="是否立即收费" type="BaseEnumType.E_SHIFOUBZ" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="scigxrqi" longname="上次更新日" type="BaseType.U_BZRIQILX" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="xcigxrqi" longname="下次更新日" type="BaseType.U_BZRIQILX" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="sfcsljsf" longname="是否重新立即收费" type="BaseEnumType.E_SHIFOUBZ" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="qgyqtnsh" longname="期供逾期天数" type="BaseType.U_CHANZXLX" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="qkyxzqbz" longname="有欠款是否允许展期标志" type="BaseEnumType.E_SHIFOUBZ" required="false" desc="" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="zqxdzjne" longname="证券化选定总金额" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="zqycljne" longname="证券化已处理金额" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+   	    <element id="zqwcljne" longname="证券化未处理金额" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+   	    <element id="zqgmcgje" longname="证券化购买成功金额" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+   	    <element id="zqgmsbje" longname="证券化购买失败金额" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+   	    <element id="zqzczrjk" longname="证券化资产转让价款" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+   	   	<element id="zqrgzyue" longname="证券化认购总余额" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="pngzphao" longname="凭证批号" type="BaseType.U_PNGZPHAO" required="false" desc="凭证批号" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="zhifumim" longname="支付密码" type="BaseType.U_MIMAMMMM" required="false" desc="支付密码" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="zhjnzlei" longname="证件种类" type="BaseEnumType.E_ZHJNLEIX" required="false" desc="证件种类" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="zhjhaoma" longname="证件号码" type="BaseType.U_ZHJHAOMA" required="false" desc="证件号码" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+   		
+   		<!--  -->
+   		<element id="scyjlxjx" longname="上次应计利息计息额" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+   		<element id="scfaxijx" longname="上次应计罚息计息额" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+   		<element id="scfuxijx" longname="上次应计复习计息额" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+   		<element id="schxbxjx" longname="上次已核销本金利息计息额" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+   	<element id="ykehuhao" longname="原客户号" type="BaseType.U_KEHUHAOO" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="ykehmngc" longname="原客户名称" type="BaseType.U_ZHONGWMC" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+		<element id="qianbjne" longname="欠本金额" type="BaseType.U_ZHANGHYE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/> 		
+        <element id="shangjjg" longname="上级机构号" type="BaseType.U_JIGOUHAO" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="sjjgmnch" longname="上级机构名称" type="BaseType.U_JRJGMNGC" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+    </complexType>
+</schema>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<schema id="LnDev" package="cn.sunline.ltts.busi.at.tables.loan" longname="贷款开发测试表" classgen="normal" xsi:noNamespaceSchemaLocation="ltts-model.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <description><![CDATA[开发测试用表，非生产]]></description>
+    <table id="klnl_dkyxsj" name="klnl_dkyxsj" longname="贷款运行时间" category="0" virtual="false" abstract="false">
+        <fields>
+            <field id="xuhaoooo" longname="序号" type="BaseType.U_CHANZXLX" ref="AtDict.Dict.xuhaoooo" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="farendma" longname="法人代码" type="BaseType.U_FARENDMA" ref="AtDict.Dict.farendma" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="jiaoyirq" longname="交易日期" type="BaseType.U_BZRIQILX" ref="ApDict.Aplt.jiaoyirq" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="dkjiejuh" longname="贷款借据号" type="BaseType.U_JIEJUHAO" ref="AtDict.Dict.dkjiejuh" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="jiaoyils" longname="交易流水" type="BaseType.U_LIUSHHAO" ref="AtDict.Dict.jiaoyils" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="jiaoyima" longname="交易码" type="BaseType.U_JIAOYIMA" ref="AtDict.Dict.jiaoyima" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="jiaoyihs" longname="交易耗时" type="BaseType.U_JYSIJNZX" ref="ApDict.Aplt.jiaoyihs" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="beizhuxx" longname="备注 " type="BaseType.U_DNMIAOSH" ref="AtDict.Dict.beizhuxx" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+        </fields>
+        <dbSequence id="klnl_dkyxsj_seq" longname="时间统计" startWith="1" minValue="1" maxValue="9999999999" incrementBy="1" cycle="true" cache="5000"/>
+        <odbindexes>
+            <index id="idx1" type="unique" fields="xuhaoooo jiaoyirq"/>
+        </odbindexes>
+        <indexes>
+            <index id="klnl_dkyxsj_index0" type="unique" fields="xuhaoooo,jiaoyirq,farendma"/>
+        </indexes>
+    </table>
+</schema>
